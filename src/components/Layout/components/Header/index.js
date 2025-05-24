@@ -9,7 +9,6 @@ import {
     faEarthAsia,
     faCircleQuestion,
     faKeyboard,
-    faCloudUpload,
     faUser,
     faCoins,
     faGear,
@@ -25,8 +24,8 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
 import Menu from '~/components/Popper/Menu';
-import Upload from '~/pages/Upload';
 import { UploadIcon } from '~/components/Icons';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -156,7 +155,7 @@ function Header() {
                     )}
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 src="https://i.pinimg.com/originals/fe/e1/4e/fee14edaa416b2746be13eafd1962ff5.jpg"
                                 className={cx('user-avatar')}
                                 alt="Nguyen Van A"
