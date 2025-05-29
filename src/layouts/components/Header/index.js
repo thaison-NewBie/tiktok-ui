@@ -100,6 +100,8 @@ function Header() {
                     <img src={images.logo} alt="TikTok" />
                 </Link>
 
+                <Button>{['F8', ' ', 'React']}</Button>
+
                 <Search />
 
                 <div className={cx('action')}>
