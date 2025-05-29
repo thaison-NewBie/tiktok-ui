@@ -6,7 +6,6 @@ import MenuItem from './MenuItem';
 import Header from './Header';
 import styles from './Menu.module.scss';
 import { useState } from 'react';
-import { data } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
